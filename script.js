@@ -7,12 +7,8 @@ function greet(name = "John") {
 //Question 2
 
 function reusableFunction(parameterA, parameterB) {
-  const element = document.querySelector(".container");
-
-  return (element.innerHTML = `<div class="${parameterA}>${parameterB}</div>`);
+  return `<div class="${parameterA}>${parameterB}</div>`;
 }
-
-reusableFunction("elementA", "elementB");
 
 //Question 3
 
@@ -23,7 +19,7 @@ async function getFact() {
 
     console.log(results[8].text);
   } catch (error) {
-    console.log((error = "An error has occured"));
+    console.log(error);
   } finally {
     console.log("Display message");
   }
